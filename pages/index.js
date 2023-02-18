@@ -4,6 +4,10 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png"; //nota cambiar la imagen despues
+import desing from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+import { Card } from "@/components/Card";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -44,8 +48,8 @@ export default function Home() {
               Soy
               <span className="text-teal-500"> Cristian Esquivel, </span>
               un desarrollador frontend con experiencia en HTML, CSS, JavaScript
-              y ReactJS. Aquí encontraras mi portafolio, en donde presento algunos de mis proyectos más
-              recientes. ¡Gracias por visitar!
+              y ReactJS. Aquí encontraras mi portafolio, en donde presento
+              algunos de mis proyectos más recientes. ¡Gracias por visitar!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-12 py-3 text-gray-600">
@@ -76,7 +80,34 @@ export default function Home() {
               </span>
             </p>
           </div>
+
+          {/* card system */}
+          <div>
+            <Card
+              img={desing}
+              title="Hermosos Diseños"
+              text={"Creando hermosos diseños para tu web, con las últimas herramientas de diseño web"}
+              subtitle="Herramientas que uso"
+              tools={["Scss", "Tailwind CSS", "Figma"]}
+            />
+            <Card
+              img={code}
+              title="Hermosos Diseños"
+              text={"Creando hermosos diseños para tu web"}
+              subtitle="Herramientas que uso"
+              tools={["Scss", "Tailwind CSS", "Figma"]}
+            />
+            <Card
+              img={consulting}
+              title="Hermosos Diseños"
+              text={"Creando hermosos diseños para tu web"}
+              subtitle="Herramientas que uso"
+              tools={["Scss", "Tailwind CSS", "Figma"]}
+            />
+          </div>
         </section>
+
+        
       </main>
     </>
   );
