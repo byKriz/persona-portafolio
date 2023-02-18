@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Profile } from "@/containers/Profile";
 import { Services } from "@/containers/Services";
+import { Portafolio } from "@/containers/Portafolio";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
       <main className=" bg-white px-10">
         <Profile />
         <Services />
+        <Portafolio />
       </main>
     </>
   );
